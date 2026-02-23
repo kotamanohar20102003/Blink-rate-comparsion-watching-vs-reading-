@@ -9,6 +9,7 @@ compute Eye Aspect Ratio (EAR), count blinks, and report blink rate (blinks/sec)
 
 ## Project Structure
 
+```
 Input data/
   blinking_0.mp4
   blinking_1.mp4
@@ -16,43 +17,34 @@ Input data/
 
 src/
   blink_compare.py
+```
 
 ## Setup
 
-1. Create and activate a virtual environment (recommended)
-2. Install dependencies:
+```bash
 pip install -r requirements.txt
-
+```
 
 ## Run
 
-From the project root directory:
-
-
+```bash
 python src/blink_compare.py --movie "Input data/blinking_0.mp4" --reading "Input data/blinking_1.mp4"
-
+```
 
 Optional parameters:
 
-
---ear_thresh 0.22
---consec 3
-
-
-Example:
-
+```bash
 python src/blink_compare.py --movie "Input data/blinking_0.mp4" --reading "Input data/blinking_1.mp4" --ear_thresh 0.22 --consec 3
-
+```
 
 ## Output
 
-The program displays:
-- Live blink counter on video frames
+- Live blink counter on video frames  
 - Final comparison in the console:
-  - Total blinks
-  - Duration (seconds)
-  - Blink rate (blinks/sec and blinks/min)
-  - Observation comparing movie vs reading blink rate
+  - Total blinks  
+  - Duration (seconds)  
+  - Blink rate (blinks/sec and blinks/min)  
+  - Observation comparing movie vs reading blink rate  
 
 ## Notes
 
